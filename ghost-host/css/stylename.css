@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/Lato-Regular.eot"), url("../fonts/Lato-Regular.woff") format("woff"),
+        url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "Myriad Pro Bold";
+    src: url("../fonts/Myriad Pro Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face { 
+    font-family: "Georgia Italic";
+    src: url("../fonts/Georgia_Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "Lato Medium";
+    src: url("../fonts/Lato-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "Lato Heavy";
+    src: url("../fonts/Lato-Heavy.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "Montserrat UltraLight";
+    src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face { 
+    font-family: "Lato Semibold";
+    src: url("../fonts/Lato-Semibold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face { 
+    font-family: "Lato Bold";
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face { 
+    font-family: "Lato Black";
+    src: url("../fonts/Lato-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face { 
+    font-family: "Lato Light";
+    src: url("../fonts/Lato-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face { 
+    font-family: "Lato Thin";
+    src: url("../fonts/Lato-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/fontawesome-webfont.eot"), 
+         url("../fonts/fontawesome-webfont.woff") format("woff"),
+         url("../fonts/fontawesome-webfont.woff2") format("woff2"), 
+         url("../fonts/fontawesome-webfont.ttf.ttf") format("truetype"),
+         url("../fonts/FontAwesome.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
