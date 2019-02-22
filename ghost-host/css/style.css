@@ -625,6 +625,7 @@ header .navigation li {
   color: #1F89BA;
 }
 .comments-wrap {
+  overflow: hidden;
   min-height: 190px;
   background: url(../img/slider-bg.jpg) no-repeat center -500px;
 }
@@ -649,10 +650,13 @@ header .navigation li {
   align-items: center;
 } 
 .pagination p {
+  margin-right: 60px;
   color: #FFFFFF;
   font: 2rem 'Lato Bold';
   font-weight: 700;
   display: inline-block;
+  padding-right: 10px;
+  border-right: 2px solid #fff;
 }
 .slides {
   margin-left: 12px;
