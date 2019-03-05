@@ -32,7 +32,6 @@ const searchCtrl = async () => {
     // search recipes
     try {
       await state.search.httpRequest();
-      console.log(state.search.result);
       // render pesults on UI
       delSpinner();
       searchView.renderResults(state.search.result);
@@ -47,9 +46,8 @@ elements.paginPages.addEventListener('click', e => {
 
   let target = e.target;
   let button = target.closest('.btn-inline');
-
+  
   if(button) {
-
     let page = parseInt(button.dataset.goto, 10);
     searchView.clearResults();
     searchView.renderResults(state.search.result, page);
@@ -60,33 +58,25 @@ elements.paginPages.addEventListener('click', e => {
 const recipeCtrl = async () => {
 
   let id = window.location.hash.slice(1);
-
   if(id) {
-
     // prepare UI for changes
     recipeView.highLightActive(id);
     recipeView.clearRecipe();
     renderSpinner(elements.recipe);
     // create recipe obj
     state.recipe  = new Recipe(id);
-    //  TESTING
-    //window.r = state.recipe;
     try {
       // wait for responce
       await state.recipe.httpRequest();
       // contain data to html string
-
       state.recipe.calcTime();
       state.recipe.calcServing();
       state.recipe.rewriteIngredients();
-
       // update UI with data
       delSpinner();
       recipeView.recipeRender(
         state.recipe,
         state.likes.isLiked(id));
-      console.log(state.recipe);
-
     } catch(error) {
       console.log(error);
       alert('Something wrong with search');
@@ -112,8 +102,6 @@ const likesCtrl = () => {
   if(!state.likes) {
     state.likes = new Likes();
   }
-  
-  
   // if it not liked 
   if(!state.likes.isLiked(id)) {
 
@@ -132,8 +120,6 @@ const likesCtrl = () => {
 
     // render new likes list
     likesView.renderLike(id, title, author, image);
-    
-    console.log(state.likes);
 
   // if it liked already
   } else {   
@@ -144,23 +130,31 @@ const likesCtrl = () => {
     likesView.toogleLikesListButton(state.likes.arr.length);
     // render new likes list
     likesView.deleteLike(id);
-    console.log(state.likes);
   }
 }
 
 ["hashchange", "load"].forEach(event => window.addEventListener(event , recipeCtrl));
 
-// add event listener for button click;
-elements.recipe.addEventListener('click', (event) => {
+window.addEventListener('load', (event) => {
+
+  state.likes = new Likes();
+  state.likes.arr = state.likes.getFromLocalStorage() || [];
+
+  likesView.toogleLikesListButton(state.likes.arr.length);
+
+  state.likes.arr.forEach(elem => {
+    likesView.renderLike(elem.id,elem.title,elem.author,elem.img);
+  }) 
+});
+
+document.querySelector('.recipe').addEventListener('click', (event) => {
   if(event.target.matches(".btn-decrease, .btn-decrease * ")) {
     if(state.recipe.serving > 1) {
       state.recipe.recountIngredients('dec');
-      console.log(state.recipe);
       recipeView.rewriteQuantity(state.recipe.serving, state.recipe.ingredients);
     }
   }else if(event.target.matches(".btn-increase, .btn-increase * ")) {
     state.recipe.recountIngredients('inc');
-    console.log(state.recipe);
     recipeView.rewriteQuantity(state.recipe.serving, state.recipe.ingredients);
   } else if(event.target.matches(".recipe__btn--add, .recipe__btn--add * ")) {
     listCtrl();
@@ -168,7 +162,7 @@ elements.recipe.addEventListener('click', (event) => {
     likesCtrl();
   }
 })
-elements.shoppingList.addEventListener('click', (event) => {
+document.querySelector('.shopping__list').addEventListener('click', (event) => {
 
   if(event.target.matches(".shopping__delete, .shopping__delete * ")) {
 
@@ -184,17 +178,4 @@ elements.shoppingList.addEventListener('click', (event) => {
     let id = event.target.closest(".shopping__item").dataset.itemid;
     state.list.updateCount(id, value);
   }
-  
 })
-window.addEventListener('load', (event) => {
-
-  state.likes = new Likes();
-  state.likes.arr = state.likes.getFromLocalStorage() || [];
-
-  likesView.toogleLikesListButton(state.likes.arr.length);
-
-  state.likes.arr.forEach(elem => {
-    likesView.renderLike(elem.id,elem.title,elem.author,elem.img);
-  }) 
-  
-});
