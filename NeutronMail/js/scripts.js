@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  new WOW().init();
+  
   $('.slider-clients').slick({
     slidesToShow: 6,
     slidesToScroll: 1,

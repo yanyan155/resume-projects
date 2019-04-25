@@ -74,6 +74,8 @@ header .container {
 }
 .langs-wrap {
   margin-right: auto;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .langs {
   display: flex;
@@ -120,6 +122,8 @@ nav {
   align-items: center;
   margin-bottom: 40px;
   margin-right: 43px;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 nav a{
   padding: 10px;
@@ -136,6 +140,8 @@ nav a:last-child{
 }
 .authorization{
   margin-bottom: 37px;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .button-decorate,
 .button-undecorate {
@@ -193,11 +199,21 @@ nav a:last-child{
   max-width: 1000px;
   margin-top: 65px;
 }
+.intro-block h2{
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+.intro-block h3{
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
 .user-information {
   position: relative;
   display: flex;
   align-items: center;
   margin-top: 74px;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
 }
 .user-information:after {
   position: absolute;
@@ -274,6 +290,8 @@ button:active {
   justify-content: space-between;
   min-height: 95px;
   z-index: 10;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
 }
 .sotials li:hover a {
   color: #5D7DEA;
@@ -325,14 +343,21 @@ button:active {
   width: 10000%;
   height: 1px;
 }
+.advantage .advantage-block{
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
 .advantage .advantage-block:nth-child(1) {
   background: url(../assets/img/icon-advantage1.png) no-repeat -5px 5px;
+  animation-delay: 0.2s;
 }
 .advantage .advantage-block:nth-child(2) {
   background: url(../assets/img/icon-advantage2.png) no-repeat -19px -3px;
+  animation-delay: 0.4s;
 }
 .advantage .advantage-block:nth-child(3) {
   background: url(../assets/img/icon-advantage3.png) no-repeat -10px 8px;
+  animation-delay: 0.6s;
 }
 .advantage-block h3 {
   font: 3rem/37px 'Titillium Web';
@@ -377,11 +402,15 @@ button:active {
   font: 6rem 'Titillium Web';
   letter-spacing: 0.07rem;
   color: #535353;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .security h3{
   margin-top: 2px;
   font: 2.4rem/22px 'Titillium Web';
   color: #959393;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .security h3 span{
   color: #F65151;
@@ -464,6 +493,8 @@ button:active {
   flex-direction: column;
   justify-content: space-around;
   min-height: 71px;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
 }
 .quote-controls li{
   width: 13px;
@@ -479,6 +510,8 @@ button:active {
   max-width: 550px;
   margin-left: 26px;
   letter-spacing: 0.027rem;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .quote-block {
   display: none;
@@ -536,11 +569,15 @@ button:active {
   font: 3.6rem 'Titillium Web';
   color: #535353;
   letter-spacing: 0.01rem;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .devices-info p{
   padding-right: 5px;
   font: 1.6rem/22px 'Titillium Web';
   color: #9B9A9A;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
 }
 .download-button {
   margin-top: 29px;
@@ -551,6 +588,7 @@ button:active {
   background: black;
   border-radius: 8px;
   cursor: pointer;
+  animation-duration: 1s;
 }
 .download-button:hover {
   background: #3C3C3C;
@@ -570,6 +608,7 @@ button:active {
   position: relative;
   margin-right: 10px;
   padding: 9px 18px 11px 57px;
+  animation-delay: 0.6s;
 }
 .download-button1 i {
   position: absolute;
@@ -579,6 +618,7 @@ button:active {
 }
 .download-button2 {
   background: url(../assets/img/download-button-icon.png) no-repeat 12px center, black;
+  animation-delay: 0.8s;
 }
 .devices-info img{
   position: absolute;
@@ -620,12 +660,16 @@ button:active {
 .currency h2 {
   font: 3.6rem/30px 'Titillium Web';
   color: #535353;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .currency h3 {
   margin-top: 5px;
   font: 2.9rem/37px 'Titillium Web';
   letter-spacing: 0.02rem;
   color: #7c7c7c;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
 }
 .currency .button-decorate {
   margin-top: 37px;
@@ -634,6 +678,7 @@ button:active {
   font-weight: 700;
   color: #fff;
   border-radius: 35px;
+  animation-duration: 1s;
 }
 .button-decorate.currency-button1 {
   margin-right: 47px;
@@ -644,6 +689,7 @@ button:active {
   background: linear-gradient(90deg, #646C92, #5F2E69);
   letter-spacing: 0.038rem;
   box-shadow: 0px 10px 10px rgba(20, 80, 204, 0.37);
+  animation-delay: 0.6s;
 }
 .currency-button1:hover {
   box-shadow: 0px 10px 10px rgba(20, 80, 204, 0.57);
@@ -657,6 +703,7 @@ button:active {
   background: linear-gradient(90deg, #35BBE0, #5E7BEA);
   letter-spacing: 0.05rem;
   box-shadow: 0px 10px 10px rgba(26, 230, 218, 0.37);
+  animation-delay: 0.8s;
 }
 .currency-button2:hover {
   box-shadow: 0px 10px 10px rgba(26, 230, 218, 0.57);
@@ -765,6 +812,8 @@ footer:after {
 }
 .contacts {
   position: relative;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .contacts:before {
   position: absolute;
@@ -797,13 +846,26 @@ footer:after {
   font: 1.8rem/23px 'Titillium Web';
   font-weight: 700;
   color: #5C5C5C;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
 }
 .nav-block ul {
   margin-top: 24px;
+  animation-duration: 1s;
+}
+.nav-block:nth-child(1) ul {
+  animation-delay: 0.4s;
+}
+.nav-block:nth-child(2) ul {
+  animation-delay: 0.6s;
+}
+.nav-block:nth-child(3) ul {
+  animation-delay: 0.8s;
 }
 .nav-block li {
   position: relative;
   padding-right: 16px;
+  animation-duration: 1s;
 }
 .nav-block li:after {
   position: absolute;
@@ -814,6 +876,7 @@ footer:after {
   background: #5C5C5C;
   content: '';
 }
+
 .nav-block a {
   font: 1.4rem/23px 'Titillium Web';
   color: #5C5C5C;
@@ -828,6 +891,8 @@ footer:after {
   justify-content: left;
   align-items: center;
   margin-top: 63px;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
 }
 .sotials-list li{
   position: relative;
@@ -847,8 +912,9 @@ footer:after {
 }
 .sotials-list li:after{
   position: absolute;
-  content: '/';
   right: -8px;
+  top: 11px;
+  content: '/';
 }
 .sotials-list li:last-child:after{
   content: '';
@@ -864,6 +930,8 @@ footer:after {
   font: 1.2rem/19px 'Titillium Web';
   color: #5C5C5C;
   letter-spacing: 0.01rem;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
 }
 @media(max-width: 1420px) {
   header .container {
