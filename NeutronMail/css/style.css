@@ -58,7 +58,8 @@ h3 {
   color: #858688;
 } 
 h3 span {
-  color: #fc2028;
+  color: #5B4295;
+  font-weight: 700;
 }
 .container {
   max-width: 1402px;
@@ -71,6 +72,7 @@ header .container {
   align-items: center;
   min-height: 232px;
   max-height: 280px;
+  margin-bottom: 25px;
 }
 .langs-wrap {
   margin-right: auto;
@@ -145,7 +147,7 @@ nav a:last-child{
 }
 .button-decorate,
 .button-undecorate {
-  padding: 6px 20px 12px;
+  padding: 6px 40px 12px;
   font: 1.6rem 'Titillium Web';
   font-weight: 700;
   color: #454545;
@@ -172,7 +174,7 @@ nav a:last-child{
   background: -moz-linear-gradient(-45deg, #6379D0, #582C7E);
   background: linear-gradient(-45deg, #6379D0, #582C7E);
   color: #fff;
-  box-shadow: 0px 13px 13px rgba(20, 80, 204, 0.37);
+  box-shadow: 0px 5px 5px rgba(20, 80, 204, 0.37);
 }
 .authorization .button-decorate:hover {
   background: -webkit-linear-gradient(-45deg, #6379D0 60%, #582C7E);
@@ -184,8 +186,8 @@ nav a:last-child{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 590px;
-  background: url(../assets/img/introduce.png) no-repeat center center; 
+  min-height: 540px;
+  background: url(../assets/img/introduce1.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -197,7 +199,7 @@ nav a:last-child{
   justify-content: center;
   align-items: center;
   max-width: 1000px;
-  margin-top: 65px;
+  margin-top: 40px;
 }
 .intro-block h2{
   animation-duration: 1s;
@@ -208,22 +210,11 @@ nav a:last-child{
   animation-delay: 0.4s;
 }
 .user-information {
-  position: relative;
   display: flex;
   align-items: center;
   margin-top: 74px;
   animation-duration: 1s;
   animation-delay: 0.4s;
-}
-.user-information:after {
-  position: absolute;
-  top: 13px;
-  left: -35%;
-  display: block;
-  width: 590px;
-  height: 50px;
-  background: url(../assets/img/fake-lake.png) no-repeat -5px 5px; 
-  content: '';
 }
 .user-information button {
   margin-right: 24px;
@@ -242,7 +233,7 @@ nav a:last-child{
   z-index: 1;
 }
 .user-information>.button-decorate{
-  box-shadow: 0px 10px 10px rgba(20, 80, 204, 0.57);
+  box-shadow: 0px 6px 6px rgba(20, 80, 204, 0.57);
 }
 button:active {
   transform: translateY(4px);
@@ -284,11 +275,11 @@ button:active {
 .sotials {
   position: fixed;
   right: 35px;
-  top: 50%;
+  bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 95px;
+  height: 150px;
   z-index: 10;
   animation-duration: 1s;
   animation-delay: 0.6s;
@@ -297,9 +288,8 @@ button:active {
   color: #5D7DEA;
 }
 .sotials a{
-  font-size: 2.2rem;
-  background: #fff;
-  color: #676766;
+  font-size: 4rem;
+  color: rgba(163, 76, 178, 0.8);
 }
 .advantage {
   display: flex;
@@ -324,6 +314,7 @@ button:active {
   display: block;
   background: #B9B9B9;
   content: '';
+  z-index: -1;
 }
 .advantage-block:nth-child(1):after {
   top: -115px;
@@ -335,7 +326,7 @@ button:active {
   top: 15px;
   right: -4%;
   width: 1px;
-  height: 432px;
+  height: 460px;
 }
 .advantage-block:nth-child(3):after {
   top: 15px;
@@ -352,11 +343,11 @@ button:active {
   animation-delay: 0.2s;
 }
 .advantage .advantage-block:nth-child(2) {
-  background: url(../assets/img/icon-advantage2.png) no-repeat -19px -3px;
+  background: url(../assets/img/icon-advantage2a.png) no-repeat -22px -7px;
   animation-delay: 0.4s;
 }
 .advantage .advantage-block:nth-child(3) {
-  background: url(../assets/img/icon-advantage3.png) no-repeat -10px 8px;
+  background: url(../assets/img/icon-advantage3.png) no-repeat -10px 10px;
   animation-delay: 0.6s;
 }
 .advantage-block h3 {
@@ -370,14 +361,14 @@ button:active {
 }
 .advantage .advantage-block:nth-child(2) h3,
 .advantage .advantage-block:nth-child(2) h4 {
-  padding-left: 57px;
+  padding-left: 66px;
 }
 .advantage .advantage-block:nth-child(3) h3,
 .advantage .advantage-block:nth-child(3) h4 {
   padding-left: 55px;
 }
 .advantage-block h4 {
-  font: 1.8rem/16px 'Titillium Web';
+  font: 1.8rem/20px 'Titillium Web';
   letter-spacing: 0.02rem;
   color: #959393;
 }
@@ -406,21 +397,17 @@ button:active {
   animation-delay: 0.2s;
 }
 .security h3{
-  margin-top: 2px;
-  font: 2.4rem/22px 'Titillium Web';
+  font: 2.4rem/36px 'Titillium Web';
   color: #959393;
   animation-duration: 1s;
   animation-delay: 0.2s;
-}
-.security h3 span{
-  color: #F65151;
 }
 .security a {
   position: relative;
   display: inline-block;
   margin-left: 54.8%;
   margin-top: 26px;
-  padding: 15px 28px 21px 27px;
+  padding: 15px 40px 21px 40px;
   font: 1.6rem 'Titillium Web';
   letter-spacing: 0.035rem;
   color: #676767;
@@ -507,7 +494,9 @@ button:active {
   background: #101010;
 }
 .quotes-wrap {
-  max-width: 550px;
+  width: 550px;
+  max-height: 161px;
+  overflow-y: auto;
   margin-left: 26px;
   letter-spacing: 0.027rem;
   animation-duration: 1s;
@@ -648,8 +637,8 @@ button:active {
 }
 .currency:after {
   position: absolute;
-  bottom: -84px;
-  right: 100%;
+  bottom: -83px;
+  right: 90%;
   width: 90000%;
   height: 1px;
   margin-right: -100%;
@@ -673,7 +662,7 @@ button:active {
 }
 .currency .button-decorate {
   margin-top: 37px;
-  padding: 13px 24px 16px 24px;
+  padding: 13px 40px 16px 40px;
   font: 1.8rem 'Titillium Web';
   font-weight: 700;
   color: #fff;
@@ -688,11 +677,11 @@ button:active {
   background: -moz-linear-gradient(90deg, #646C92, #5F2E69);
   background: linear-gradient(90deg, #646C92, #5F2E69);
   letter-spacing: 0.038rem;
-  box-shadow: 0px 10px 10px rgba(20, 80, 204, 0.37);
+  box-shadow: 0px 6px 6px rgba(20, 80, 204, 0.37);
   animation-delay: 0.6s;
 }
 .currency-button1:hover {
-  box-shadow: 0px 10px 10px rgba(20, 80, 204, 0.57);
+  box-shadow: 0px 6px 6px rgba(20, 80, 204, 0.57);
 }
 .button-decorate.currency-button2 {
   padding: 13px 46px 16px 47px;
@@ -702,26 +691,31 @@ button:active {
   background: -moz-linear-gradient(90deg, #35BBE0, #5E7BEA);
   background: linear-gradient(90deg, #35BBE0, #5E7BEA);
   letter-spacing: 0.05rem;
-  box-shadow: 0px 10px 10px rgba(26, 230, 218, 0.37);
+  box-shadow: 0px 6px 6px rgba(26, 230, 218, 0.37);
   animation-delay: 0.8s;
 }
 .currency-button2:hover {
-  box-shadow: 0px 10px 10px rgba(26, 230, 218, 0.57);
+  box-shadow: 0px 6px 6px rgba(26, 230, 218, 0.57);
 }
 footer {
   position: relative;
-  max-width: 1400px;
-  margin:0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
-  padding-right: 224px;
+  padding-right: 20px;
   padding-top: 17px;
+  background: #fff;
+  background: -webkit-linear-gradient(90deg, #FCFCFC, #FFF 10%);
+  background: -o-linear-gradient(90deg, #FCFCFC, #FFF 10%);
+  background: -moz-linear-gradient(90deg, #FCFCFC, #FFF 10%);
+  background: linear-gradient(90deg, #FCFCFC, #FFF 10%);
 }
 footer:after {
   position: absolute;
   display: block;
   background: #B9B9B9;
-  bottom: 40px;
-  right: 200px;
+  bottom: 0px;
+  right: 0px;
   width: 1px;
   height: 1000%;
   content: '';
