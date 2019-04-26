@@ -110,11 +110,22 @@ header .container {
 .langs li:last-child::after{
   content: '';
 }
+.langs span {
+  position: relative;
+}
+.langs .active span:before,
+.langs li:hover span:before {
+  position: absolute;
+  bottom: -6px;
+  height: 1px;
+  left: 0;
+  width: 100%;
+  background: #959595;
+  content: '';
+}
 .langs .active,
 .langs li:hover{
   font-weight: 700;
-  text-decoration: underline;
-  text-underline-position: under;
 }
 nav {
   display: flex;
@@ -128,14 +139,24 @@ nav {
   animation-delay: 0.2s;
 }
 nav a{
+  position: relative;
   padding: 10px;
   margin-right: 6px;
-  font: 1.4rem 'Titillium Web';
+  font: 1.6rem 'Titillium Web';
   letter-spacing: 0.1rem;
   color: #454545;
 }
-nav a:hover{
-  text-decoration: underline;
+nav span{
+  position: relative;
+}
+nav span:hover:after{
+  position: absolute;
+  bottom: -6px;
+  height: 1px;
+  left: 0;
+  width: 100%;
+  background: #454545;
+  content: '';
 }
 nav a:last-child{
   margin-right: 0px;
@@ -495,7 +516,7 @@ button:active {
 }
 .quotes-wrap {
   width: 550px;
-  max-height: 161px;
+  max-height: 158px;
   overflow-y: auto;
   margin-left: 26px;
   letter-spacing: 0.027rem;
@@ -829,12 +850,14 @@ footer:after {
 }
 .contacts p:last-child a{
   text-decoration: underline;
+  text-underline-position: under;
 } 
 .contacts p:last-child a:hover{
   color: #353535;
 }
 .contacts a:hover {
   text-decoration: underline;
+  text-underline-position: under;
 }
 .nav-block h3 {
   font: 1.8rem/23px 'Titillium Web';
@@ -877,6 +900,8 @@ footer:after {
 }
 .nav-block li:hover a {
   text-decoration: underline;
+  text-underline-position: under;
+  color: #252525;
 }
 .sotials-list {
   display: flex;
@@ -894,8 +919,6 @@ footer:after {
   padding: 10px;
   font: 1.2rem/23px 'Titillium Web';
   letter-spacing: 0.0rem;
-  text-decoration: underline;
-  text-underline-position: under;
   cursor: pointer;
 }
 .sotials-list li:first-child {
@@ -914,7 +937,17 @@ footer:after {
   content: '';
 }
 .sotials-list a{
+  position: relative;
   color: #5C5C5C;
+}
+.sotials-list a:hover:before {
+  position: absolute;
+  bottom: -6px;
+  height: 1px;
+  left: 0;
+  width: 100%;
+  background: #252525;
+  content: '';
 }
 .sotials-list li:hover a{
   font-weight: 700;
