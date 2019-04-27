@@ -715,12 +715,14 @@ button:active {
 }
 .button-undecorate.currency-button2 {
   margin-top: 20px;
-  padding: 13px 46px 16px 47px;
+  padding: 11px 44px 14px 45px;
   letter-spacing: 0.05rem;
   color: #582c7e;
+  border: 2px solid #877C7C;
   animation-delay: 0.8s;
 }
 .currency-button2:hover {
+  padding: 13px 46px 16px 47px;
   background: #5E7BEA;
   background: -webkit-linear-gradient(90deg, #35BBE0, #5E7BEA);
   background: -o-linear-gradient(90deg, #35BBE0, #5E7BEA);
@@ -728,10 +730,18 @@ button:active {
   background: linear-gradient(90deg, #35BBE0, #5E7BEA);
   box-shadow: 0px 6px 6px rgba(26, 230, 218, 0.57);
   color: #fff;
+  border: none;
 }
 .currency-button2:hover i {
   color: #fff;
 }
+.footer-wrap {
+  background: -webkit-linear-gradient(90deg, #FFFFFF 40%, #F3F3F3);
+  background: -o-linear-gradient(90deg, #FFFFFF 40%, #F3F3F3);
+  background: -moz-linear-gradient(90deg, #FFFFFF 40%, #F3F3F3);
+  background: linear-gradient(90deg, #FFFFFF 40%, #F3F3F3);
+}
+
 footer {
   position: relative;
   max-width: 1200px;
@@ -740,10 +750,6 @@ footer {
   padding-right: 20px;
   padding-top: 17px;
   background: #fff;
-  background: -webkit-linear-gradient(90deg, #FCFCFC, #FFF 10%);
-  background: -o-linear-gradient(90deg, #FCFCFC, #FFF 10%);
-  background: -moz-linear-gradient(90deg, #FCFCFC, #FFF 10%);
-  background: linear-gradient(90deg, #FCFCFC, #FFF 10%);
 }
 footer:after {
   position: absolute;
@@ -762,12 +768,14 @@ footer:after {
   color: #7A7A7A;
 }
 .slider-partners {
+  margin-top: 75px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-width: 974px;
   height: 92px;
   margin-left: auto;
+  margin-right: auto;
 }
 .partner1 {
   width: 74px;
@@ -803,7 +811,7 @@ footer:after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 155px;
+  margin-top: 75px;
 }
 .contacts {
   padding-left: 19px;
