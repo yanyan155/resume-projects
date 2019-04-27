@@ -3,7 +3,7 @@ $(document).ready(function(){
   new WOW().init();
   //slick slider logic
   $('.slider-clients').slick({
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,

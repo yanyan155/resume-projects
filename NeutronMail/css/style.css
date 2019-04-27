@@ -176,7 +176,7 @@ nav a:last-child{
 }
 .button-decorate,
 .button-undecorate {
-  padding: 6px 40px 12px;
+  padding: 11px 40px 14px;
   font: 1.6rem 'Titillium Web';
   font-weight: 700;
   color: #454545;
@@ -462,33 +462,32 @@ button:active {
   align-items: center;
   max-width: 966px;
   height: 66px;
-  margin-left: 20px;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
 }
 .client1 {
-  width: 127px;
-  height: 16px;
-  background: url(../assets/img/clients/client1.png) no-repeat center;
+  width: 175px;
+  height: 22px;
+  background: url(../assets/img/clients/client1a.png) no-repeat center;
 }
 .client2 {
-  width: 102px;
-  height: 15px;
-  background: url(../assets/img/clients/client2.png) no-repeat center;
+  width: 150px;
+  height: 22px;
+  background: url(../assets/img/clients/client2a.png) no-repeat center;
 }
 .client3 {
-  width: 108px;
-  height: 21px;
-  background: url(../assets/img/clients/client3.png) no-repeat center;
-}
-.client4 {
-  width: 80px;
-  height: 23px;
-  background: url(../assets/img/clients/client4.png) no-repeat center;
-}
-.client5 {
   width: 144px;
   height: 28px;
-  background: url(../assets/img/clients/client5.png) no-repeat center;
+  background: url(../assets/img/clients/client3a.png) no-repeat center;
+}
+.client4 {
+  width: 108px;
+  height: 31px;
+  background: url(../assets/img/clients/client4a.png) no-repeat center;
+}
+.client5 {
+  width: 195px;
+  height: 38px;
+  background: url(../assets/img/clients/client5a.png) no-repeat center;
 }
 .client6 {
   width: 58px;
@@ -593,7 +592,7 @@ button:active {
 }
 .devices-info p{
   padding-right: 5px;
-  font: 1.6rem/22px 'Titillium Web';
+  font: 1.6rem/24px 'Titillium Web';
   color: #9B9A9A;
   animation-duration: 1s;
   animation-delay: 0.4s;
@@ -641,7 +640,7 @@ button:active {
 }
 .devices-info img{
   position: absolute;
-  top: -276px;
+  top: -272px;
   right: -424px;
   z-index: -1;
 }
@@ -732,20 +731,6 @@ button:active {
 .currency-button2:hover i {
   color: #fff;
 }
-/*.button-decorate.currency-button2 {
-  padding: 13px 46px 16px 47px;
-  background: #5E7BEA;
-  background: -webkit-linear-gradient(90deg, #35BBE0, #5E7BEA);
-  background: -o-linear-gradient(90deg, #35BBE0, #5E7BEA);
-  background: -moz-linear-gradient(90deg, #35BBE0, #5E7BEA);
-  background: linear-gradient(90deg, #35BBE0, #5E7BEA);
-  letter-spacing: 0.05rem;
-  box-shadow: 0px 6px 6px rgba(26, 230, 218, 0.37);
-  animation-delay: 0.8s;
-}
-.currency-button2:hover {
-  box-shadow: 0px 6px 6px rgba(26, 230, 218, 0.57);
-}*/
 footer {
   position: relative;
   max-width: 1200px;
@@ -1072,22 +1057,6 @@ footer:after {
     font-size: 5rem;
     line-height: 55px;
   }
-  /*header .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .langs-wrap {
-    margin-right: 0; 
-  }
-  nav {
-    margin-bottom: 0;
-    margin-right: 0;
-  }
-  .authorization {
-    margin-bottom: 0;
-  }*/
   .security-header {
     left: 0;
     margin: 0 auto;
@@ -1198,21 +1167,6 @@ footer:after {
   }
 }
 @media(max-width: 650px) {
-  /* #EEEEEE */
-  /*.bg-wrapper:before {
-    position: absolute;
-    top: -89px;
-    width: 102.5%;
-    height: 400px;
-    display: block;
-    background: -webkit-linear-gradient(45deg, #F7F7F7, #EEEEEE);
-    background: -o-linear-gradient(45deg, #F7F7F7, #EEEEEE);
-    background: -moz-linear-gradient(45deg, #F7F7F7, #EEEEEE);
-    background: linear-gradient(45deg, #F7F7F7, #EEEEEE);
-    content: '';
-    transform: rotate(-6.5deg);
-    z-index: -1;
-  }*/
   header {
     background: -webkit-linear-gradient(0deg, #FFF, #EEEEEE);
     background: -o-linear-gradient(0deg, #FFF, #EEEEEE);
