@@ -1,7 +1,7 @@
 $(document).ready(function(){
-
+  // wow.js logic
   new WOW().init();
-  
+  //slick slider logic
   $('.slider-clients').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -52,7 +52,7 @@ $(document).ready(function(){
     }
   ]
   });
-
+  // quotesControl logic
   let blockquotesControl = document.querySelector('.quote-controls');
   blockquotesControl.addEventListener('click', (event) => {
     let target = event.target;
@@ -74,4 +74,40 @@ $(document).ready(function(){
       number === i+1 ? elem.classList.add("active") : '';
     }); 
   }
+  // hamburger logic
+  let pointView = 1050;
+  let isShowHamburger = false;
+  window.addEventListener("resize", () => {
+    //setTimeout(() => { 
+      burderMenu();
+    //}, 100);
+  });
+
+  const toogleClass = () => {
+
+    let hamburger = document.querySelector(".hamburger");
+    hamburger.classList.toggle("is-active");
+    let menu = document.querySelector("nav");
+    menu.classList.toggle("show");
+  }
+  function burderMenu () {
+
+    let innerWidth = window.innerWidth;
+    if(innerWidth <= pointView && !isShowHamburger) {
+
+      isShowHamburger = true;
+      let hamburger = document.querySelector(".hamburger");
+      hamburger.style.display = "inline-block";
+      hamburger.addEventListener("click", toogleClass, true);
+
+    } else if(innerWidth > pointView && isShowHamburger) {
+
+      isShowHamburger = false;
+      let hamburger = document.querySelector(".hamburger");
+      hamburger.style.display = "none";
+      hamburger.removeEventListener("click", toogleClass, true);
+    }
+  }
+  // burdermenu logic
+  burderMenu();
 });
