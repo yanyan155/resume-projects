@@ -525,6 +525,7 @@ button:active {
   width: 550px;
   max-height: 158px;
   overflow-y: auto;
+  overflow-x: hidden;
   margin-left: 26px;
   letter-spacing: 0.027rem;
   animation-duration: 1s;
