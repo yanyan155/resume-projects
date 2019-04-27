@@ -585,6 +585,7 @@ button:active {
 .devices-info h3{
   margin-bottom: 8px;
   font: 3.6rem 'Titillium Web';
+  line-height: 40px;
   color: #535353;
   letter-spacing: 0.01rem;
   animation-duration: 1s;
@@ -676,7 +677,7 @@ button:active {
   content: '';
 }
 .currency h2 {
-  font: 3.6rem/30px 'Titillium Web';
+  font: 3.6rem/40px 'Titillium Web';
   color: #535353;
   animation-duration: 1s;
   animation-delay: 0.2s;
@@ -713,13 +714,13 @@ button:active {
   box-shadow: 0px 6px 6px rgba(20, 80, 204, 0.57);
 }
 .button-undecorate.currency-button2 {
-  padding: 6px 46px 12px 47px;
+  margin-top: 20px;
+  padding: 13px 46px 16px 47px;
   letter-spacing: 0.05rem;
   color: #582c7e;
   animation-delay: 0.8s;
 }
 .currency-button2:hover {
-  padding: 13px 46px 16px 47px;
   background: #5E7BEA;
   background: -webkit-linear-gradient(90deg, #35BBE0, #5E7BEA);
   background: -o-linear-gradient(90deg, #35BBE0, #5E7BEA);
@@ -1069,6 +1070,7 @@ footer:after {
 @media(max-width: 1000px) {
   h2 {
     font-size: 5rem;
+    line-height: 55px;
   }
   /*header .container {
     flex-wrap: wrap;
@@ -1168,6 +1170,17 @@ footer:after {
   .security {
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
+  }
+  .security a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .security a:before {
+    display: none;
+  }
+  .quote-block p {
+    text-align: left;
   }
   .bg-wrapper:before {
     width: 115%;
@@ -1228,6 +1241,9 @@ footer:after {
     justify-content: space-around;
     height: auto;
   }
+  .currency {
+    padding-top: 30px;
+  }
 }
 @media(max-width: 530px) {
   .sotials {
@@ -1265,6 +1281,12 @@ footer:after {
   .nav-wrap .nav-block:first-child h3 {
     margin-top: 0px;
   }
+  .currency {
+    margin-bottom: 40px;
+  }
+  .currency:after {
+    bottom: -40px;
+  }
 }
 @media(max-width: 430px) {
   header .container {
@@ -1283,6 +1305,7 @@ footer:after {
   }
   .langs li {
     margin-right: 0px;
+    padding: 5px 10px;
   }
   .langs li:first-child {
     padding-left: 10px;
@@ -1300,34 +1323,52 @@ footer:after {
     height: 120px;
     margin-top: 12px;
   }
+  .intro-wrap {
+    min-height: 360px;
+  }
   .intro-block {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   h2 {
     font-size: 3.5rem;
+    line-height: 40px;
   }
   h3 {
     font-size: 2.5rem;
+    line-height: 30px;
     letter-spacing: 0.03rem;
     color: #858688;
   }
+
   .security h2 {
     font-size: 3.5rem;
+    line-height: 40px;
   }
   .security h3 {
     font-size: 2.2rem;
+    line-height: 26px;
+  }
+  .user-information {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    margin-top: 20px;
   }
   .quote-block p {
     font-size: 1.8rem;
+    line-height: 22px;
   }
   .devices-info h3 {
     font-size: 2.5rem;
+    line-height: 30px;
   }
   .currency h2 {
     font-size: 3.5rem;
+    line-height: 40px;
   }
   .currency h3 {
     font-size: 2.5rem;
+    line-height: 30px;
   }
 }
 @media(max-width: 376px) {
